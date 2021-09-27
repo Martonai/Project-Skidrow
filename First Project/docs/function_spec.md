@@ -8,3 +8,6 @@ system time date. The deadline is set by the user while he is selecting a future
 The initial state of the job cannot be specified, it is automatically set to "Waiting to be processed".
 Later, the status of the task can be changed to "In Progress", which after
 it can be set to "Waiting Review" when the task is completed. 
+If the the task publisher has reviewed the task and meets the expectations, you can change the status to "Accepted",
+on the other hand, if the task does not appropriate expectations, it changes the status to "Waiting to Process" and also change the deadline.
+In addition, the user can search by name from the table by using a "Search bar".
