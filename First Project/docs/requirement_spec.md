@@ -6,3 +6,8 @@ that the user must find out from the table which task belongs to them.
 Or you need to make a separate excel spreadsheet for each user which is not very practical.
 We want to be able to store who is the client of the task, when
 the task was issued, when the task is due and what condition the task is in.
+It is important to be able to create and modify a task.
+The change is necessary even if
+the principal has completed the assignment and the principal reviews and failed to perform the assignment
+or you did not complete the task well, you can change the deadline and status of the task. You can also search by name.
+
