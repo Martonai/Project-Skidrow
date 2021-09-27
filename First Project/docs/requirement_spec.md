@@ -21,7 +21,7 @@ It is important to be able to create and modify a task.
 The change is necessary even if the employee has completed the assignment and the principal reviews and failed to perform the assignment
 or you did not complete the task well, you can change the deadline and status of the task. 
 
-###Extras
-   *You can also search by name.
+### Extras
+   * You can also search by name.
 
 
