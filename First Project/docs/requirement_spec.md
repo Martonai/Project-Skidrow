@@ -11,12 +11,13 @@ send a paper-based version or email to excel.
 
 ## What are the expections about the application
  ### We want to be able to store
-   * who is the client of the task, 
+   * who is the client of the task
    * when the task was issued
    * when the task is due 
-   * what condition the task is in.
+   * what condition the task is in
+## The creation and modify
 It is important to be able to create and modify a task.
-The change is necessary even if
-the principal has completed the assignment and the principal reviews and failed to perform the assignment
+The change is necessary even if the principal has completed the assignment and the principal reviews and failed to perform the assignment
 or you did not complete the task well, you can change the deadline and status of the task. You can also search by name.
+
 
