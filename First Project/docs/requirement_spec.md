@@ -19,6 +19,12 @@ The application has a login interface, where employees and employers can login t
 ## Functional requirements
 
 ## System laws, standards, recommendations 
+This application is not open source and cannot be distributed for money. In addition, this application exclude any other copy version. 
+Application must be use at company, it cannot be used at home.
+This application was built by three main pillar.
+1. Integrity
+2. Availability
+3. Confidentiality
 
 ## Current buisness process model
 Nowadays the paper-based system is obsolete and not redundant as well. This is not an unified system, you cannot trace your own work, your own problems etc...
