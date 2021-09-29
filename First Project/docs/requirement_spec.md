@@ -23,6 +23,10 @@ The application has a login interface, where employees and employers can login t
 ## Current buisness process model
 
 ## Required business process
+The user can login in the welcome screen. There is two textboxes, one for the email and the second for the password.
+And there is a hyperlink, where he can contact with the admin if there is some problem with his loing.
+After the login, the application has to provide some function, of course it depends from the privileges level.
+(Admin has the 3 privilege level, employers has the 2 and employees has to 1 level)
 
 ## List of requirements
 Modul | ID | Name | Version | Explantation
