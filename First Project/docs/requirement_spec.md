@@ -78,6 +78,13 @@ Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadl
 Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions 
 
 ## Reports
+This is questionnaire where users can explain their opinion about the application:
+
+1. Are you satisfied with this application?
+2. Will you change something?
+3. What kind of mark  are you rating this application?
+4. Would you recommend to other companies?
+
 
 ## Glossary
 
