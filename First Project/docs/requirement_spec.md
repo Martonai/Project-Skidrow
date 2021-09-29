@@ -12,6 +12,8 @@ Or you need to make a separate excel spreadsheet for each user which is not very
 
 ## Dream System
 The application is intended to replace the current system with a more structured and traceable system.  Application is avaible on Android mobilphones.
+The application has a registration interface, where employees and employers can register to the application, and they have different privileges.
+
 
 ## Functional requirements
 
