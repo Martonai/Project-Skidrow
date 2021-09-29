@@ -21,6 +21,8 @@ The application has a login interface, where employees and employers can login t
 ## System laws, standards, recommendations 
 
 ## Current buisness process model
+Nowadays the paper-based system is obsolete and not redundant as well. This is not an unified system, you cannot trace your own work, your own problems etc...
+Excel was a step further, but even this isn't the system what this company needs. Our company needs more redundant, and more traceable system.
 
 ## Required business process
 The user can login in the welcome screen. There is two textboxes, one for the email and the second for the password.
