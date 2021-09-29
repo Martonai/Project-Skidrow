@@ -10,7 +10,8 @@ send a paper-based version or email to excel.The problem with excel is
 that the user must find out from the table which task belongs to them.
 Or you need to make a separate excel spreadsheet for each user which is not very practical.
 
-## System dream
+## Dream System
+The application is intended to replace the current system with a more structured and traceable system.  Application is avaible on Android mobilphones.
 
 ## Functional requirements
 
