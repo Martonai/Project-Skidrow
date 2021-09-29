@@ -24,11 +24,13 @@ The application has a login interface, where employees and employers can login t
 ## Required business process
 
 ## List of requirements
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
- 
+Modul | ID | Name | Version | Explantation
+------------ | ------------- | ------------ | ----------- | -----------
+Permission | P1 | Login interface | 1.0 | The user can login to the application with his/her email and with the generated password
+Employer | E1 | Show employer | 1.0 | This field will show, who assigned the task
+Employee | E2 | Show employee | 1.0 | This field will show, who had got the task 
+Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadlines to each tasks
+Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions 
 
 ## Reports
 
