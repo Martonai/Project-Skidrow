@@ -13,7 +13,8 @@ Or you need to make a separate excel spreadsheet for each user which is not very
 
 ## Dream System
 The application is intended to replace the current system with a more structured and traceable system.  Application is avaible on Android mobilphones.
-The application has a login interface, where employees and employers can login to the application, and they have different privileges.
+The application has a login interface, where employees and employers can login to the application, and they have different permission.
+The application is always up-to-date and thanks to this the employees can trace what task given to them. Employers can easily manage their tasks.
 
 
 ## Functional requirements
