@@ -1,7 +1,8 @@
 # Requirement specification
 
 ## Overview
-The goal of the application is that the employees can see which jobs had added to them.
+The employer can create tasks which he/she entrusts employees. Goal of the application is that the employees can see which tasks they have to do. The application uses android system which every user can use via the phone.
+They see what task they have to do also who untrusted them with the job. Furthermore they can see when is the deadline date. It is good because the employer can monitor that what are each employees are doing.
 
 ## Current situation
 From the very beginning, our company has stored tasks within the company on paper and excel.
