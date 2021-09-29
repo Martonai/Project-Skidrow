@@ -17,6 +17,14 @@ The application has a login interface, where employees and employers can login t
 
 
 ## Functional requirements
+The application provides login interface and user can contact with admins if something went wrong. 
+Task Condition is selectable from the list which is in the top of the corner. 
+These are the following conditions
+1. Waiting to be processed
+2. In progress
+3. Waiting to be reviewed
+4. Accepted
+We can search by name and order by deadline.
 
 ## System laws, standards, recommendations 
 This application is not open source and cannot be distributed for money. In addition, this application exclude any other copy version. 
@@ -47,7 +55,7 @@ After the login, the user will see the interface below
 * In the 1 field, the user see who set the task to him/her
 * In the 2 fiield, the user see when the task was given
 * In the 3 field, the user see what is the deadline of the task
-* In the 4 field, the user see what condition the task in and he can change depends on his permission
+* In the 4 field, the user see what condition the task is in and he can change depends on his permission
 * In the 5 field, the user see the description about the task
 * In the 6 field, the user see his/her username
 * In the 7 field, the user see his/her email address
