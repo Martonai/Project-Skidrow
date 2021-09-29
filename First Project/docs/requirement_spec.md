@@ -30,12 +30,6 @@ After the login, the application has to provide some function, of course it depe
 ![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/WelcomeScreen.png)
 
 
-After the login screen, the user be able to see his/her username, and his/her permission level.
-If an employer has logined, then permission level has to be 2.
-If an employee has logined, then permission level has to be 1.
-
-
-
 
 
 
