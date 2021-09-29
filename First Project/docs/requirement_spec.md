@@ -24,9 +24,10 @@ The application has a login interface, where employees and employers can login t
 ## Required business process
 
 ## List of requirements
-Modul | ID | Name | version | Explaintation
------ |----|-----|---------
-Permission | K1 | Login interface | The user can login with his generated username and generated password
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
  
 
 ## Reports
