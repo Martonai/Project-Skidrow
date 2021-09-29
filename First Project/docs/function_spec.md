@@ -1,5 +1,53 @@
 # Function specification
-## System requirements
+
+## Overview
+
+## Current situation
+
+## List of requirements
+
+## Current buisness processes model
+
+## Required buisness processes model
+
+## Use cases
+
+## Correspondence, how the use cases are covered a requirements
+
+## Screen plans
+
+## Scenario
+
+## Function-requirements compliance
+
+## Glossary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -Based on the requirements, our program should have a graphical interface and since
 the company only uses andriod phones so the platform should be android.
 In the application we can create new task with plus button.
