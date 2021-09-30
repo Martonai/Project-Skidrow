@@ -9,8 +9,10 @@ Furthermore, they can see each task's condition, and they can change it depends 
 
 ## Current situation
 The customer want to change their obsolete system to a new, modern, up-to-date system.
-Customer had ordered a well-built system, which was built in the 3 main pillar.
-
+Customer had ordered a well-built system, which is available throught android.
+The system helps the employees to monitor their tasks. They used a paper based solution before
+but they quickly realized that it is not really effective. So they started to search for a application
+that helps them in this situation.
 
 
 
