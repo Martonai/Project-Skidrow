@@ -35,6 +35,8 @@ Our company needs more redundant, and more traceable system.
 
 ## Required business processes model
 building a completely reliable and easy-to-use system which everyone can easily use in their daily lives.
+In order to simplify the tasks of the students, we create a program that is in line with today
+can stand its ground in the world of electronics.
 
 ## Use cases
 * ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
