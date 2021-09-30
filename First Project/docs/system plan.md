@@ -20,7 +20,12 @@ Employees can easily trace what tasks was given to them, what is the deadline, w
 ## Project plan
 Function | Task | Priority | estimation | elapsed time | Remaining Time
 ------------ | ------------- | ------------ | ----------- | ----------- | -----------
-Requirement specification | - | 0 | 12 | 12 | 0
+Requirement specification |   | 0 | 12 | 12 | 0
+Functional specification |   | 0 | 12 | 12 | 0
+System plan |   | 0 | 16 | 8 | 8
+Data storage | Data model planning | 0 | 4 | 4 | 0
+   | Implementing a database in server | 1 | 1 | 0 | 1
+Login interface | Creating a logo | 2 | 8 | 0 | 8
 
 ## Business plan model
 
