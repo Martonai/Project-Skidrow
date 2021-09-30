@@ -1,8 +1,19 @@
 # Function specification
 
 ## Overview
+We are building an application which can help the employees to trace thier tasks, and help employers to manage their employees and tasks.
+This application provides an up-to-date system, where users (employees and employers) can see what the task is, when the task was given, and what is the deadline.
+Furthermore, they can see each task's condition, and they can change it depends on what permission level connected to the user.
+
+
 
 ## Current situation
+The customer want to change their obsolete system to a new, modern, up-to-date system.
+Customer had ordered a well-built system, which was built in the 3 main pillar.
+
+
+
+
 
 ## List of requirements
 
