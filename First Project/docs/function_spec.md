@@ -55,7 +55,7 @@ user privileges, roles, passwords, and
 change your username. They must also be able to
 to add users to the system and to put them down
 of it.
-* EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task.
+* EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task. When the issued task is completed, the employer will also see it. The employer can also change his own work or that of others.
 * EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".
 ![Use cases](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
 ## Correspondence, how the use cases are covered a requirements
