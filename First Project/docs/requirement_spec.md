@@ -49,7 +49,7 @@ After the login, the application has to provide some function, of course it depe
 
 After the login, the user will see the interface below
 
-![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
+![User Interface](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
 
 
 

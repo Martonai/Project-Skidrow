@@ -16,6 +16,36 @@ Employees can easily trace what tasks was given to them, what is the deadline, w
 ## Requirements
 
 ## Functional plan
+### System characters
+* Admin
+* Employers
+* Employees
+
+Amind:
+
+* Manage all user
+* Recover or generate new password
+* Delete users
+* Modify the application
+* Delete tasks
+* Modify the permission level
+ 
+Employer:
+
+* Manage employees
+* Give tasks
+* Change task's condition
+* Write task explantation
+* Change deadline
+* Search by name
+* Order by deadlines
+
+Employee:
+
+* Trace their tasks 
+* Read task explantation
+* Change one condition which is from "In progress" to "Wait to be overviewed"
+
 
 ## Physical enviroment
 The application supports the android mobilephones. The minimum android version is 5.0.
@@ -33,7 +63,7 @@ Programming languges:
 ## Architectural plan
 
 ## Database plan
-
+![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
 
 ## Implementation plan
 
