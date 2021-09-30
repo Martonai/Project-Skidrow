@@ -144,6 +144,24 @@ It must be able to provide functions available on all interfaces.
 
 **Android**
 
+**Registration interface:**
+
+The registration interface must be available after the program is installed a
+on the home screen next to the login option. If
+user is not registered yet by clicking the button here
+redirect to the registration interface. The appropriate data on this interface
+by entering the confirmation button by clicking on the user
+registration must be performed as described in the functional specification
+go and then make the login available to the user.
+If you enter incorrect registration information, you should receive an error message a
+user.
+
+**Login Interface:**
+
+Checking the login / registration interface layout: Expected operation: a
+according to the screen design in the functional specification
+look regardless of screen size.
+
 ## Installation plan
 
 ## Maintance plan
