@@ -18,8 +18,8 @@ Employees can easily trace what tasks was given to them, what is the deadline, w
 
 
 ## Project plan
-Function | Task | Priority | estimation | elapsed time
------------- | ------------- | ------------ | ----------- | -----------
+Function | Task | Priority | estimation | elapsed time | Remaining Time
+------------ | ------------- | ------------ | ----------- | ----------- | -----------
 
 ## Business plan model
 
