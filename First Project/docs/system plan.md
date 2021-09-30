@@ -181,3 +181,15 @@ it!
 
 
 ## Maintance plan
+To check
+whether the application is compatible with future versions of Android.
+Over time, new categories need to be added to the application to keep it up
+level of interest.
+Here are some types of maintenance
+
+1. Adaptive Maintenance: Keeping the program up to date and fine-tuning.
+2. Preventive Maintenance: Troubleshoot problems you haven't
+they seem important, but can cause serious problems later.
+3. Perfective Maintenance: Performed for long-term use of the software
+modifications, new features, software performance and operation
+improving its reliability.
