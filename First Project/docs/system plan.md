@@ -6,6 +6,7 @@ interface is given to the program.
 Because the app is for Android only
 we want to make it available in an application, it is not our intention to make it different, for example
 Run on a device with an iOS operating system.
+We want all ages to easily find their place in the use of the app and spread it as widely as possible.
 
 ## System purpose
 The goal of this system is, to provides an up-to-date application, for the users, and thanks to, they can trace their tasks.
