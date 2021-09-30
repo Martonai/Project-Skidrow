@@ -26,6 +26,8 @@ Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadl
 Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions
 
 ## Current buisness processes model
+In today’s world, education doesn’t take advantage of existing technologies to make learning a lot more fun.
+Young people are less and less willing to learn in a "classic" way.
 
 ## Required buisness processes model
 
