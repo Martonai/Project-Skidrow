@@ -20,7 +20,10 @@ Modul | ID | Name | Version | Explantation
 ------------ | ------------- | ------------ | ----------- | -----------
 Permission | P1 | Login interface | 1.0 | The user can login to the application with his/her email and with the generated password
 Employer | E1 | Show employer | 1.0 | This field will show, who assigned the task
-Employee | E2 | Show employee | 1.0 | This field will show, who had got the task 
+Employee | E2 | Show employee | 1.0 | This field will show, who had got the task
+Task given time | TG1 | Show time | 1.0 | This field will show, when the task was given
+Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadlines to each tasks
+Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions
 
 ## Current buisness processes model
 
