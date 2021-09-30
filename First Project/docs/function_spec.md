@@ -78,6 +78,14 @@ There is 3 main character of this application.
 2. Second is the user, who connected to the application, and who can modify changes. They can setup deadlines.
 3. Database, which is the provides the datas for the applictaion.
 
+When the user opens the application the login interface is displayed.  Across the login interface user can login to the application. The user can be registered by the admin.
+Once logged in, the Home screen appears, showing the board, logout point, and a menu where new tasks can be taken. Last but not least we can find a search bar where user can search by name.
+If someone has administrative permission, a register tab will appear next to them. Modify between tasks only the admin and the employer can. The status can only be modified by the user.
+
+
+
+
+
 ## Function-requirements compliance
 
 ## Glossary
