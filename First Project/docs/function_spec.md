@@ -26,10 +26,31 @@ Employer | E1 | Show employer | 1.0 | This field will show, who assigned the tas
 ## Required buisness processes model
 
 ## Use cases
+* ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
+* EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task.
+* EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".
 
 ## Correspondence, how the use cases are covered a requirements
 
 ## Screen plans
+If the user start the application, a login screen will shown.
+The user will type the email address and the generated password.
+![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/WelcomeScreen.png)
+
+After the login, the user will see the interface below
+![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
+
+* In the 1 field, the user see who set the task to him/her
+* In the 2 fiield, the user see when the task was given
+* In the 3 field, the user see what is the deadline of the task
+* In the 4 field, the user see what condition the task is in and he can change depends on his permission
+* In the 5 field, the user see the description about the task
+* In the 6 field, the user see his/her username
+* In the 7 field, the user see his/her email address
+* In the 8 field, the user see his/her permission level
+* In the 9 field, the user can contact with the admin
+
+Attention! These pictures only an illustration, the final application can be different!
 
 ## Scenario
 
