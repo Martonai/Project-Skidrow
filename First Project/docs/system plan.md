@@ -14,6 +14,16 @@ Employees can easily trace what tasks was given to them, what is the deadline, w
 ## Business plan model
 
 ## Requirements
+### Functional requirements
+* Store user's datas
+* Work on at last 5.0 or newer android system
+* Add permission levels to users
+
+### Non-functional requirements
+* Normal users are not be able to access other user's datas, only the admin.
+
+### Laws, rules
+* compliance with gdpr
 
 ## Functional plan
 ### System characters
@@ -53,6 +63,7 @@ The application use MySQL database
 Developer enviroments: 
 * Android studio
 * PhPmyAdmin
+* dbdiagram.io
 
 Programming languges:
 * PhP
