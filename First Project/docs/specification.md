@@ -1,4 +1,0 @@
-#Requirement specification
-
-#Function specification
-
