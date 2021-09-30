@@ -26,6 +26,14 @@ Customer had ordered a well-built system, which was built in the 3 main pillar.
 ## Correspondence, how the use cases are covered a requirements
 
 ## Screen plans
+If the user start the application, a login screen will shown.
+The user will type the email address and the generated password.
+![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/WelcomeScreen.png)
+
+After the login, the user will see the interface below
+![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
+
+Attention! These pictures only an illustration, the final application can be different!
 
 ## Scenario
 
