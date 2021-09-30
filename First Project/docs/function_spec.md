@@ -75,7 +75,7 @@ Attention! These pictures only an illustration, the final application can be dif
 There is 3 main character of this application.
 
 1. First of all, the running application, where if the user has logged in, they can see everything which was provided by the applictaion.
-2. Second is the user, who connected to the applictiaon, and who can modify changes. Like write new task...
+2. Second is the user, who connected to the application, and who can modify changes. They can setup deadlines.
 3. Database, which is the provides the datas for the applictaion.
 
 ## Function-requirements compliance
