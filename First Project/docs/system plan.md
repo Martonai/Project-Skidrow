@@ -92,6 +92,14 @@ Programming languges:
 ## Abstract domain model
 
 ## Architectural plan
+Frontend:
+
+1. The design of the application is developed by Android studio.
+
+Backend:
+
+1. The system requires a database server, in this case we use MySql.
+2. We use Java and php language for the development.
 
 ## Database plan
 ![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/Database.PNG)
