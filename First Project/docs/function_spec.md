@@ -22,6 +22,9 @@ Customer had ordered a well-built system, which was built in the 3 main pillar.
 ## Required buisness processes model
 
 ## Use cases
+ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
+EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task.
+EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".
 
 ## Correspondence, how the use cases are covered a requirements
 
