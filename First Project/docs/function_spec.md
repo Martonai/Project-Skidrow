@@ -25,11 +25,11 @@ Task given time | TG1 | Show time | 1.0 | This field will show, when the task wa
 Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadlines to each tasks
 Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions
 
-## Current buisness processes model
+## Current business processes model
 In today’s world, education doesn’t take advantage of existing technologies to make learning a lot more fun.
 Young people are less and less willing to learn in a "classic" way.
 
-## Required buisness processes model
+## Required business processes model
 
 ## Use cases
 * ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
