@@ -20,6 +20,7 @@ Modul | ID | Name | Version | Explantation
 ------------ | ------------- | ------------ | ----------- | -----------
 Permission | P1 | Login interface | 1.0 | The user can login to the application with his/her email and with the generated password
 Employer | E1 | Show employer | 1.0 | This field will show, who assigned the task
+Employee | E2 | Show employee | 1.0 | This field will show, who had got the task 
 
 ## Current buisness processes model
 
