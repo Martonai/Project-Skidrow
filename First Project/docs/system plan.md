@@ -88,11 +88,14 @@ Programming languges:
 Frontend:
 
 1. The design of the application is developed by Android studio.
+2. 
 
 Backend:
 
 1. The system requires a database server, in this case we use MySql.
 2. We use Java and php language for the development.
+3. Development environment is Android studio.
+
 
 ## Database plan
 ![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/Database.PNG)
