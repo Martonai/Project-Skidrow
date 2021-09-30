@@ -33,6 +33,16 @@ The user will type the email address and the generated password.
 After the login, the user will see the interface below
 ![Login screen](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
 
+* In the 1 field, the user see who set the task to him/her
+* In the 2 fiield, the user see when the task was given
+* In the 3 field, the user see what is the deadline of the task
+* In the 4 field, the user see what condition the task is in and he can change depends on his permission
+* In the 5 field, the user see the description about the task
+* In the 6 field, the user see his/her username
+* In the 7 field, the user see his/her email address
+* In the 8 field, the user see his/her permission level
+* In the 9 field, the user can contact with the admin
+
 Attention! These pictures only an illustration, the final application can be different!
 
 ## Scenario
