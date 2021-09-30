@@ -40,6 +40,7 @@ can stand its ground in the world of electronics.
 The ToDo app is an easy-to-use interface that everyone can use easily and dynamically every day.
 This will make everyone's days easier. We can set tasks for ourselves and assign a deadline or a reminder
 so that we don't forget to do it by accident;)
+in the end, we can also set whether we’ve done the task, whether we still need time, or whether we shouldn’t do it anyway.
 
 ## Use cases
 * ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
