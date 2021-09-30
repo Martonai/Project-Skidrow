@@ -97,6 +97,13 @@ Programming languges:
 ![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/Database.PNG)
 
 ## Implementation plan
+It will be written in Android Studio and Javascript.
+These technologies are written in separate files as much as possible
+for easier transparency.
+You will be able to use the Backend section running
+REST service methods, so you can upload and query data from the
+from a database.
+
 
 ## Test plan
 
