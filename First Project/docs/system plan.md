@@ -171,5 +171,13 @@ according to the screen design in the functional specification
 look regardless of screen size.
 
 ## Installation plan
+Download the app from the Google Store, enter the required one
+permissions and install the program!
+If you do not want to install the application from the store, then
+enable on your device the so - called "Third Party
+contents "in the settings!
+Place the ".apk" extension on your device and run it
+it!
+
 
 ## Maintance plan
