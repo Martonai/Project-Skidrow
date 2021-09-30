@@ -35,7 +35,7 @@ This application was built by three main pillar.
 2. Availability
 3. Confidentiality
 
-## Current buisness process model
+## Current business process model
 Nowadays the paper-based system is obsolete and not redundant as well. This is not an unified system, you cannot trace your own work, your own problems etc...
 Excel was a step further, but even this isn't the system what this company needs. Our company needs more redundant, and more traceable system.
 
