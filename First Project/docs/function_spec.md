@@ -29,6 +29,9 @@ Task conditions | T1 | Show what condition the task in | 1.0 | In this field, th
 In today’s world, education doesn’t take advantage of existing technologies to make learning a lot more fun.
 Young people are less and less willing to learn in a "classic" way. The Paper task management Nowdays was obsolete.
 It can be made much more interesting and easier.
+This is not an unified system, you cannot trace your own work, your own problems etc...
+Excel was a step further, but even this isn't the system what this company needs.
+Our company needs more redundant, and more traceable system.
 
 ## Required business processes model
 
