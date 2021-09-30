@@ -18,7 +18,7 @@ Employees can easily trace what tasks was given to them, what is the deadline, w
 
 
 ## Project plan
-Modul | ID | Name | Version | Explantation
+Function | Task | Priority | estimation | elapsed time
 ------------ | ------------- | ------------ | ----------- | -----------
 
 ## Business plan model
