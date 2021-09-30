@@ -46,7 +46,7 @@ in the end, we can also set whether we’ve done the task, whether we still need
 * ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
 * EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task.
 * EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".
-
+![Use cases](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
 ## Correspondence, how the use cases are covered a requirements
 
 ## Screen plans
