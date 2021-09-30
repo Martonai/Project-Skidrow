@@ -106,6 +106,21 @@ from a database.
 
 
 ## Test plan
+**Testing procedures:**
+
+**Unit test:**
+
+Wherever possible, it is necessary to test during development to ensure that
+methods work properly. The
+methods are ready when the test cases run without error
+methods.
+
+**Alfa test:**
+
+The primary purpose of the test is to make the existing functions different
+testing for compatibility with browsers and androids.
+The procedure is successful if you have it in different browsers and on different androids
+the various functions work properly.
 
 ## Installation plan
 
