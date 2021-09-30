@@ -32,6 +32,7 @@ Milestones: *
 			*
 
 ## Business plan model
+![Business Plan Model](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
 
 ## Requirements
 ### Functional requirements
