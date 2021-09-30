@@ -63,7 +63,7 @@ Programming languges:
 ## Architectural plan
 
 ## Database plan
-![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/UserInterface.png)
+![Database plan](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/Database.PNG)
 
 ## Implementation plan
 
