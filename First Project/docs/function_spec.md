@@ -27,7 +27,8 @@ Task conditions | T1 | Show what condition the task in | 1.0 | In this field, th
 
 ## Current business processes model
 In today’s world, education doesn’t take advantage of existing technologies to make learning a lot more fun.
-Young people are less and less willing to learn in a "classic" way.
+Young people are less and less willing to learn in a "classic" way. The Paper task management Nowdays was obsolete.
+It can be made much more interesting and easier.
 
 ## Required business processes model
 
