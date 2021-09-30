@@ -106,23 +106,23 @@ from a database.
 
 
 ## Test plan
-**Testing procedures: **
+**Testing procedures:**
 
-**Unit test: **
+**Unit test:**
 
 Wherever possible, it is necessary to test during development to ensure that
 methods work properly. The
 methods are ready when the test cases run without error
 methods.
 
-**Alfa test: **
+**Alfa test:**
 
 The primary purpose of the test is to make the existing functions different
 testing for compatibility with browsers and androids.
 The procedure is successful if you have it in different browsers and on different androids
 the various functions work properly.
 
-**Beta test: **
+**Beta test:**
 
 This test is not performed by developers.
 Browsers to test: Opera, Firefox, Google Chrome, Safari
@@ -133,16 +133,16 @@ During testing, testing users can send feedback to
 developers in the event of a problem / bug.
 If an error occurs, the developers will fix it as soon as possible.
 
-** Functions to be tested: **
+**Functions to be tested:**
 
-** Backend Service **
+**Backend Service**
 
 You need to be able to connect to both web and android clients.
 You must be able to serve multiple clients at the same time.
 You need to be able to upload and retrieve database data.
 It must be able to provide functions available on all interfaces.
 
-** Android **
+**Android**
 
 ## Installation plan
 
