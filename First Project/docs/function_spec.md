@@ -20,12 +20,14 @@ that helps them in this situation.
 ## List of requirements
 Modul | ID | Name | Version | Explantation
 ------------ | ------------- | ------------ | ----------- | -----------
-Permission | P1 | Login interface | 1.0 | The user can login to the application with his/her email and with the generated password
-Employer | E1 | Show employer | 1.0 | This field will show, who assigned the task
-Employee | E2 | Show employee | 1.0 | This field will show, who had got the task
-Task given time | TG1 | Show time | 1.0 | This field will show, when the task was given
-Deadline | D1 | Show deadline | 1.0 | In this field, the employers can set deadlines to each tasks
-Task conditions | T1 | Show what condition the task in | 1.0 | In this field, the employers and employees can switch between task conditions
+Permission | K1 | Login interface | 1.0 | The user can login to the application with his/her email and with the generated password
+Modification | K2 | Create user | 1.0 | Creating user by adding text to the username field and adding password.
+Modification | K3 | Delete time | 1.0 | Delete user by simply clicking on a delete button.
+Modification | K4 | Create task| 1.0 | Create task by: EMPLOYER who created auto generated, EMPLOYEE  who is attached to the task, creation date auto generated, deadline added by the emplyer.
+Modification | K5 | Modify task | 1.0 | In this field, the employers and employees can switch between task conditions
+Modification | K6 | Register user | 1.1 | Only the admin can register the users.
+Modification | K7 | Delete user | 1.1 | Only the admin can delete the user.
+Permission | K8 | Permission levels | 1.1 | -Admin: Can create and delete users. Can manage the table by adding tasks to it or modifing them. Also he can delete tasks. -Employer: He can read the table and see everyones task alos he can add new tasks or can modify them. -Employee: They can only view the tasks and modify the task status. -
 
 ## Current business processes model
 In today’s world, education doesn’t take advantage of existing technologies to make learning a lot more fun.
