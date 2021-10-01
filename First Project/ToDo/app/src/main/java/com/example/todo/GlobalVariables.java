@@ -18,5 +18,9 @@ public class GlobalVariables
                    "BLTY8A",
                    "TEST01"
            };
-   public static String asdasd;
+   public static String hadchanged;
+   public static int method()
+   {
+       return 55;
+   }
 }
