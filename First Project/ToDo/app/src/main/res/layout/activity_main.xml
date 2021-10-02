@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/backgroundcolor"
-    >
+    android:background="#1E1E1E"
+    tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/welcomeTx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="124dp"
-        android:textColor="@color/textcolor"
         android:text="Welcome in ToDo"
+        android:textColor="#F84710"
         android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/emailET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,10 +26,11 @@
         android:id="@+id/failedTx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="52dp"
         android:textColor="@color/textcolor"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/connectAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
@@ -35,39 +38,58 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="400dp"
-        android:textColor="@color/textcolor"
         android:onClick="Login"
         android:text="LOGIN"
+        android:backgroundTint="#DD5327"
+        android:textColor="@color/textcolor"
+        app:layout_constraintBottom_toTopOf="@+id/failedTx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/passET" />
 
     <EditText
         android:id="@+id/emailET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="208dp"
-        android:textColor="@color/textcolor"
         android:ems="10"
+        android:hint="Email@..."
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Email@"
+        android:textColor="@color/textcolor"
+        android:textColorHint="#636363"
+        app:layout_constraintBottom_toTopOf="@+id/passET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTx" />
 
     <EditText
         android:id="@+id/passET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="312dp"
-        android:textColor="@color/textcolor"
         android:ems="10"
+        android:hint="Password..."
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:text="Pass"
+        android:textColor="@color/textcolor"
+        android:textColorHint="#636363"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+    <TextView
+        android:id="@+id/connectAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact with admin"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/failedTx" />
 </androidx.constraintlayout.widget.ConstraintLayout>
