@@ -30,24 +30,143 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Create method
+
+
+        Txmethods();
+        ToastConnection();
+        References();
+
+
+
+
+
+    }
+    public void Txmethods () {
         failedTx = findViewById(R.id.failedTx);
         welcomeTx = findViewById(R.id.welcomeTx);
         emailET = findViewById(R.id.emailET);
         passET = findViewById(R.id.passET);
         button = findViewById(R.id.loginBtn);
+    }
+    public void References () {
 
-
-        ToastConnection();
-
-
-
-        //Create method
         references[0] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2lVstn18z2E_QakY");
         references[1] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2sQsb_dkXM_EvTxu");
         references[2] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2yoNs_IVeoogPxFx");
         references[3] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-33D_5Ahezh8h2bRl");
         references[4] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-39LqUNzLAnX91e0z");
+
+    }
+    public void ValueMethod() {
+        references[0].addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GlobalVariables.emails[0] = snapshot.child("email").getValue().toString();
+                GlobalVariables.passwords[0] = snapshot.child("password").getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        references[1].addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GlobalVariables.emails[1] = snapshot.child("email").getValue().toString();
+                GlobalVariables.passwords[1] = snapshot.child("password").getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        references[2].addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GlobalVariables.emails[2] = snapshot.child("email").getValue().toString();
+                GlobalVariables.passwords[2] = snapshot.child("password").getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+        });
+        references[3].addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GlobalVariables.emails[3] = snapshot.child("email").getValue().toString();
+                GlobalVariables.passwords[3] = snapshot.child("password").getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        references[4].addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GlobalVariables.emails[4] = snapshot.child("email").getValue().toString();
+                GlobalVariables.passwords[4] = snapshot.child("password").getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+    }
+    public void MatchingMethod() {
+
+        if (emailET.getText().toString().isEmpty() || passET.getText().toString().isEmpty()) {
+            failedTx.setText("Empty datas");
+        } else {
+            //Fix the variable name issues due the array
+            if (emailET.getText().toString().equals(GlobalVariables.emails[0]) && passET.getText().toString().equals(GlobalVariables.passwords[0])) {
+                Intent intent = new Intent(MainActivity.this, gerixy20.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.emails[1]) && passET.getText().toString().equals(GlobalVariables.passwords[1])) {
+                Intent intent = new Intent(MainActivity.this, martoncsaba.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.emails[2]) && passET.getText().toString().equals(GlobalVariables.passwords[2])) {
+                Intent intent = new Intent(MainActivity.this, misinszkimarton.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.emails[3]) && passET.getText().toString().equals(GlobalVariables.passwords[3])) {
+                Intent intent = new Intent(MainActivity.this, durkupeti.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.emails[4]) && passET.getText().toString().equals(GlobalVariables.passwords[4])) {
+                Intent intent = new Intent(MainActivity.this, employee1.class);
+                startActivity(intent);
+
+            } else {
+                failedTx.setText("Failed to login!");
+            }
+        }
+
+
     }
 public void ToastConnection()
 {
@@ -68,112 +187,17 @@ public void ToastConnection()
 
     public void Login(View view) {
 
-//Create methods for these methods and then just call in Login
-        references[0].addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email1 = snapshot.child("email").getValue().toString();
-                GlobalVariables.password1 = snapshot.child("password").getValue().toString();
+
+        ValueMethod();
+        MatchingMethod();
 
 
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        references[1].addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email2 = snapshot.child("email").getValue().toString();
-                GlobalVariables.password2 = snapshot.child("password").getValue().toString();
 
 
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        references[2].addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email3 = snapshot.child("email").getValue().toString();
-                GlobalVariables.password3 = snapshot.child("password").getValue().toString();
 
 
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        references[3].addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email4 = snapshot.child("email").getValue().toString();
-                GlobalVariables.password4 = snapshot.child("password").getValue().toString();
 
 
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        references[4].addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email5 = snapshot.child("email").getValue().toString();
-                GlobalVariables.password5 = snapshot.child("password").getValue().toString();
-
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        //Create method
-       //For this example, seperate which condition was true and write some text for the user like if emailLET was empty then set the failedTx text to "Email is required" or something else"
-        if (emailET.getText().toString().isEmpty() || passET.getText().toString().isEmpty()) {
-            failedTx.setText("Empty datas");
-        } else {
-            //Fix the variable name issues due the array
-            if (emailET.getText().toString().equals(GlobalVariables.email1) && passET.getText().toString().equals(GlobalVariables.password1)) {
-                Intent intent = new Intent(MainActivity.this, gerixy20.class);
-                startActivity(intent);
-
-            } else if (emailET.getText().toString().equals(GlobalVariables.email2) && passET.getText().toString().equals(GlobalVariables.password2)) {
-                Intent intent = new Intent(MainActivity.this, martoncsaba.class);
-                startActivity(intent);
-
-            } else if (emailET.getText().toString().equals(GlobalVariables.email3) && passET.getText().toString().equals(GlobalVariables.password3)) {
-                Intent intent = new Intent(MainActivity.this, misinszkimarton.class);
-                startActivity(intent);
-
-            } else if (emailET.getText().toString().equals(GlobalVariables.email4) && passET.getText().toString().equals(GlobalVariables.password4)) {
-                Intent intent = new Intent(MainActivity.this, durkupeti.class);
-                startActivity(intent);
-
-            } else if (emailET.getText().toString().equals(GlobalVariables.email5) && passET.getText().toString().equals(GlobalVariables.password5)) {
-                Intent intent = new Intent(MainActivity.this, employee1.class);
-                startActivity(intent);
-
-            } else {
-                failedTx.setText("Failed to login!");
-            }
-        }
 
 
 
