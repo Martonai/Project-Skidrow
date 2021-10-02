@@ -24,27 +24,30 @@ public class MainActivity extends AppCompatActivity {
      TextView failedTx,welcomeTx;
      EditText emailET,passET;
      Button button;
-     DatabaseReference reff;
-    DatabaseReference reff1;
-    DatabaseReference reff2;
-    DatabaseReference reff3;
-    DatabaseReference reff4;
+     DatabaseReference[] references = new DatabaseReference[5];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Create method
         failedTx = findViewById(R.id.failedTx);
         welcomeTx = findViewById(R.id.welcomeTx);
         emailET = findViewById(R.id.emailET);
         passET = findViewById(R.id.passET);
         button = findViewById(R.id.loginBtn);
+
+
         ToastConnection();
 
-        reff = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2lVstn18z2E_QakY");
-        reff1 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2sQsb_dkXM_EvTxu");
-        reff2 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2yoNs_IVeoogPxFx");
-        reff3 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-33D_5Ahezh8h2bRl");
-        reff4 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-39LqUNzLAnX91e0z");
+
+
+        //Create method
+        references[0] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2lVstn18z2E_QakY");
+        references[1] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2sQsb_dkXM_EvTxu");
+        references[2] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2yoNs_IVeoogPxFx");
+        references[3] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-33D_5Ahezh8h2bRl");
+        references[4] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-39LqUNzLAnX91e0z");
     }
 public void ToastConnection()
 {
@@ -63,16 +66,14 @@ public void ToastConnection()
 
 }
 
-    public void Login(View view)
-    {
+    public void Login(View view) {
 
-
-
-        reff.addValueEventListener(new ValueEventListener() {
+//Create methods for these methods and then just call in Login
+        references[0].addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email1=snapshot.child("email").getValue().toString();
-                GlobalVariables.password1=snapshot.child("password").getValue().toString();
+                GlobalVariables.email1 = snapshot.child("email").getValue().toString();
+                GlobalVariables.password1 = snapshot.child("password").getValue().toString();
 
 
             }
@@ -83,11 +84,11 @@ public void ToastConnection()
             }
         });
 
-        reff1.addValueEventListener(new ValueEventListener() {
+        references[1].addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email2=snapshot.child("email").getValue().toString();
-                GlobalVariables.password2=snapshot.child("password").getValue().toString();
+                GlobalVariables.email2 = snapshot.child("email").getValue().toString();
+                GlobalVariables.password2 = snapshot.child("password").getValue().toString();
 
 
             }
@@ -98,11 +99,11 @@ public void ToastConnection()
             }
         });
 
-        reff2.addValueEventListener(new ValueEventListener() {
+        references[2].addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email3=snapshot.child("email").getValue().toString();
-                GlobalVariables.password3=snapshot.child("password").getValue().toString();
+                GlobalVariables.email3 = snapshot.child("email").getValue().toString();
+                GlobalVariables.password3 = snapshot.child("password").getValue().toString();
 
 
             }
@@ -113,11 +114,11 @@ public void ToastConnection()
             }
         });
 
-        reff3.addValueEventListener(new ValueEventListener() {
+        references[3].addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email4=snapshot.child("email").getValue().toString();
-                GlobalVariables.password4=snapshot.child("password").getValue().toString();
+                GlobalVariables.email4 = snapshot.child("email").getValue().toString();
+                GlobalVariables.password4 = snapshot.child("password").getValue().toString();
 
 
             }
@@ -128,11 +129,11 @@ public void ToastConnection()
             }
         });
 
-        reff4.addValueEventListener(new ValueEventListener() {
+        references[4].addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GlobalVariables.email5=snapshot.child("email").getValue().toString();
-                GlobalVariables.password5=snapshot.child("password").getValue().toString();
+                GlobalVariables.email5 = snapshot.child("email").getValue().toString();
+                GlobalVariables.password5 = snapshot.child("password").getValue().toString();
 
 
             }
@@ -143,41 +144,38 @@ public void ToastConnection()
             }
         });
 
-        if(emailET.getText().toString().equals(GlobalVariables.email1) && passET.getText().toString().equals(GlobalVariables.password1))
-        {
-             Intent intent = new Intent(MainActivity.this,gerixy20.class);
-             startActivity(intent);
+        //Create method
+       //For this example, seperate which condition was true and write some text for the user like if emailLET was empty then set the failedTx text to "Email is required" or something else"
+        if (emailET.getText().toString().isEmpty() || passET.getText().toString().isEmpty()) {
+            failedTx.setText("Empty datas");
+        } else {
+            //Fix the variable name issues due the array
+            if (emailET.getText().toString().equals(GlobalVariables.email1) && passET.getText().toString().equals(GlobalVariables.password1)) {
+                Intent intent = new Intent(MainActivity.this, gerixy20.class);
+                startActivity(intent);
 
+            } else if (emailET.getText().toString().equals(GlobalVariables.email2) && passET.getText().toString().equals(GlobalVariables.password2)) {
+                Intent intent = new Intent(MainActivity.this, martoncsaba.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.email3) && passET.getText().toString().equals(GlobalVariables.password3)) {
+                Intent intent = new Intent(MainActivity.this, misinszkimarton.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.email4) && passET.getText().toString().equals(GlobalVariables.password4)) {
+                Intent intent = new Intent(MainActivity.this, durkupeti.class);
+                startActivity(intent);
+
+            } else if (emailET.getText().toString().equals(GlobalVariables.email5) && passET.getText().toString().equals(GlobalVariables.password5)) {
+                Intent intent = new Intent(MainActivity.this, employee1.class);
+                startActivity(intent);
+
+            } else {
+                failedTx.setText("Failed to login!");
+            }
         }
-        else if(emailET.getText().toString().equals(GlobalVariables.email2) && passET.getText().toString().equals(GlobalVariables.password2))
-        {
-            Intent intent = new Intent(MainActivity.this,martoncsaba.class);
-            startActivity(intent);
 
-        }
 
-        else if(emailET.getText().toString().equals(GlobalVariables.email3) && passET.getText().toString().equals(GlobalVariables.password3))
-        {
-            Intent intent = new Intent(MainActivity.this,misinszkimarton.class);
-            startActivity(intent);
 
-        }
-
-       else if(emailET.getText().toString().equals(GlobalVariables.email4) && passET.getText().toString().equals(GlobalVariables.password4))
-        {
-            Intent intent = new Intent(MainActivity.this,durkupeti.class);
-            startActivity(intent);
-
-        }
-
-       else if(emailET.getText().toString().equals(GlobalVariables.email5) && passET.getText().toString().equals(GlobalVariables.password5))
-        {
-            Intent intent = new Intent(MainActivity.this,employee1.class);
-            startActivity(intent);
-
-        }
-        else{
-            failedTx.setText("Failed to login!");
-        }
     }
 }

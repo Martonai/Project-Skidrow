@@ -2,6 +2,7 @@ package com.example.todo;
 
 public class GlobalVariables
 {
+   //Create an array for these variables
    public static String email1;
    public static String password1;
    public static String email2;
