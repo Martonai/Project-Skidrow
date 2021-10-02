@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         emailET = findViewById(R.id.emailET);
         passET = findViewById(R.id.passET);
         button = findViewById(R.id.loginBtn);
+        ToastConnection();
 
         reff = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2lVstn18z2E_QakY");
         reff1 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2sQsb_dkXM_EvTxu");
@@ -43,7 +46,22 @@ public class MainActivity extends AppCompatActivity {
         reff3 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-33D_5Ahezh8h2bRl");
         reff4 = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-39LqUNzLAnX91e0z");
     }
+public void ToastConnection()
+{
+    Toast.makeText(this, "Waiting to communicate with the Firebase server", Toast.LENGTH_SHORT).show();
+    Handler handler = new Handler();
+    handler.postDelayed(new Runnable()
+    {
+        @Override
+        public void run()
+        {
+            Toast.makeText(MainActivity.this, "Connection to the Firebase database was successfully", Toast.LENGTH_SHORT).show();
+        }
+    }, 3000);
 
+
+
+}
 
     public void Login(View view)
     {
