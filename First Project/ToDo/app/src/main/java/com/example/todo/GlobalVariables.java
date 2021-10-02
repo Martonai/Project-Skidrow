@@ -2,25 +2,15 @@ package com.example.todo;
 
 public class GlobalVariables
 {
-   public static  String[] userEmails = new String[]
-           {
-                   "gerixy20@todo.com",
-                   "martoncsaba@todo.com",
-                   "misinszkimarton@todo.com",
-                   "durkupeti16@todo.com",
-                   "employee1@todo.com"
-           };
-   public static String[] userPasswords = new String[]
-           {
-                   "ZH5ED7",
-                   "FTEE8R",
-                   "Q5D7AQ",
-                   "BLTY8A",
-                   "TEST01"
-           };
-   public static String hadchanged;
-   public static int method()
-   {
-       return 55;
-   }
+   public static String email1;
+   public static String password1;
+   public static String email2;
+   public static String password2;
+   public static String email3;
+   public static String password3;
+   public static String email4;
+   public static String password4;
+   public static String email5;
+   public static String password5;
+
 }
