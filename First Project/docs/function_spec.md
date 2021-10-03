@@ -40,7 +40,7 @@ Excel was a step further, but even this isn't the system what this company needs
 Our company needs more redundant, and more traceable system.
 
 ## Required business processes model
-building a completely reliable and easy-to-use system which everyone can easily use in their daily lives.
+Building a completely reliable and easy-to-use system which everyone can easily use in their daily lives.
 In order to simplify the tasks of the students, we create a program that is in line with today
 can stand its ground in the world of electronics.
 The ToDo app is an easy-to-use interface that everyone can use easily and dynamically every day.
@@ -49,9 +49,16 @@ so that we don't forget to do it by accident;)
 in the end, we can also set whether we’ve done the task, whether we still need time, or whether we shouldn’t do it anyway.
 
 ## Use cases
-* ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.
-* EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task.
-* EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".
+* ADMIN: Admin has the maxium permission level, beacuse if there is something wrong with the application, like user cannot login, or forgot password, admin can fix this.This goes hand in hand with
+that they have access to the whole system. To the Admin (s)
+they need to be able to access a list of users where everything
+can change a user's profile. They need to know the
+user privileges, roles, passwords, and
+change your username. They must also be able to
+to add users to the system and to put them down
+of it.
+* EMPLOYER: Employer has the permission level 2, employers can give task to the employees, and change the deadline, and change all condition of task. When the issued task is completed, the employer will also see it. The employer can also change his own work or that of others.
+* EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".the employee can log in or out within the application. The employee cannot create tasks. You can only view and set the status of the tasks issued by the employer.
 ![Use cases](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
 ## Correspondence, how the use cases are covered a requirements
 
@@ -79,8 +86,16 @@ Attention! These pictures only an illustration, the final application can be dif
 There is 3 main character of this application.
 
 1. First of all, the running application, where if the user has logged in, they can see everything which was provided by the applictaion.
-2. Second is the user, who connected to the applictiaon, and who can modify changes. Like write new task...
+2. Second is the user, who connected to the application, and who can modify changes. They can setup deadlines.
 3. Database, which is the provides the datas for the applictaion.
+
+When the user opens the application the login interface is displayed.  Across the login interface user can login to the application. The user can be registered by the admin.
+Once logged in, the Home screen appears, showing the board, logout point, and a menu where new tasks can be taken. Last but not least we can find a search bar where user can search by name.
+If someone has administrative permission, a register tab will appear next to them. Modify between tasks only the admin and the employer can. The status can only be modified by the user.
+
+
+
+
 
 ## Function-requirements compliance
 
