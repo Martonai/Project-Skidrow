@@ -3,12 +3,15 @@ package com.example.todo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
      TextView failedTx,welcomeTx;
      EditText emailET,passET;
      Button button;
+     Switch darkSwitch;
+     View v;
+     boolean isColor = true;
      DatabaseReference[] references = new DatabaseReference[5];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,18 +41,25 @@ public class MainActivity extends AppCompatActivity {
         Txmethods();
         ToastConnection();
         References();
-
-
-
+        SetDarkMode();
 
 
     }
+
+
+
+
+
+
+
     public void Txmethods () {
+        v = this.getWindow().getDecorView();
         failedTx = findViewById(R.id.failedTx);
         welcomeTx = findViewById(R.id.welcomeTx);
         emailET = findViewById(R.id.emailET);
         passET = findViewById(R.id.passET);
         button = findViewById(R.id.loginBtn);
+        darkSwitch = findViewById(R.id.darkModeSwitch);
     }
     public void References () {
 
@@ -184,7 +197,6 @@ public void ToastConnection()
 
 
 }
-
     public void Login(View view) {
 
 
@@ -202,4 +214,36 @@ public void ToastConnection()
 
 
     }
+
+
+public void SetDarkMode()
+{
+    darkSwitch.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint("ResourceType")
+        @Override
+        public void onClick(View view) {
+            if (isColor) {
+                v.setBackgroundResource(R.color.black);
+                failedTx.setTextColor(Color.WHITE);
+                emailET.setTextColor(Color.WHITE);
+                passET.setTextColor(Color.WHITE);
+                darkSwitch.setTextColor(Color.WHITE);
+                darkSwitch.setText("Disable dark mode");
+                isColor = false;
+            } else {
+                v.setBackgroundResource(android.R.color.white);
+                failedTx.setTextColor(Color.BLACK);
+                emailET.setTextColor(Color.BLACK);
+                passET.setTextColor(Color.BLACK);
+                darkSwitch.setTextColor(Color.BLACK);
+                darkSwitch.setText("Enable dark mode");
+                isColor = true;
+            }
+        }
+    });
+
 }
+
+
+
+    }
