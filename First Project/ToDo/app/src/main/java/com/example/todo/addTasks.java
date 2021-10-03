@@ -33,7 +33,7 @@ public class addTasks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addTasks);
+        setContentView(R.layout.activity_addtask);
         expl = findViewById(R.id.taskExpTx);
         cond = findViewById(R.id.taskConditionTx);
         givenT = findViewById(R.id.taskGivenTx);

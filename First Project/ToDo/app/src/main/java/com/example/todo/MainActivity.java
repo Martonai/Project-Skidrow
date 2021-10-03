@@ -158,27 +158,33 @@ public class MainActivity extends AppCompatActivity {
             if (emailET.getText().toString().equals(GlobalVariables.emails[0]) && passET.getText().toString().equals(GlobalVariables.passwords[0])) {
                 Intent intent = new Intent(MainActivity.this, authorization.class);
                 intent.putExtra("key",GlobalVariables.authLevel[0]);
+                intent.putExtra("color", GlobalVariables.setColor);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[1]) && passET.getText().toString().equals(GlobalVariables.passwords[1])) {
                 Intent intent = new Intent(MainActivity.this, authorization.class);
                 intent.putExtra("key",GlobalVariables.authLevel[1]);
+                intent.putExtra("color", GlobalVariables.setColor);
                 startActivity(intent);
+
 
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[2]) && passET.getText().toString().equals(GlobalVariables.passwords[2])) {
                 Intent intent = new Intent(MainActivity.this, authorization.class);
                 intent.putExtra("key",GlobalVariables.authLevel[2]);
+                intent.putExtra("color", GlobalVariables.setColor);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[3]) && passET.getText().toString().equals(GlobalVariables.passwords[3])) {
                 Intent intent = new Intent(MainActivity.this, authorization.class);
                 intent.putExtra("key",GlobalVariables.authLevel[3]);
+                intent.putExtra("color", GlobalVariables.setColor);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[4]) && passET.getText().toString().equals(GlobalVariables.passwords[4])) {
                 Intent intent = new Intent(MainActivity.this, authorization.class);
                 intent.putExtra("key",GlobalVariables.authLevel[4]);
+                intent.putExtra("color", GlobalVariables.setColor);
                 startActivity(intent);
 
             } else {
@@ -237,6 +243,8 @@ public void SetDarkMode()
                 darkSwitch.setTextColor(Color.WHITE);
                 darkSwitch.setText("Disable dark mode");
                 isColor = false;
+                GlobalVariables.setColor = 1;
+
             } else {
                 v.setBackgroundResource(android.R.color.white);
                 failedTx.setTextColor(Color.BLACK);
@@ -245,6 +253,7 @@ public void SetDarkMode()
                 darkSwitch.setTextColor(Color.BLACK);
                 darkSwitch.setText("Enable dark mode");
                 isColor = true;
+                GlobalVariables.setColor = 0;
             }
         }
     });
