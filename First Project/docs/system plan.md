@@ -30,6 +30,11 @@ Login interface | Creating a logo | 2 | 8 | 0 | 8
 The system couldn't be used without signing in. There are 3 type of users. The first group is the employee's group which one is only
 able to read his tasks and modify the own task status. Second group is the employer who can create tasks and can asign it to an employee. Also he can view everyones tasks and can modify the task's status.
 The third group is the admin group who can do all of the above mentioned things. Furthermore the admin can create and delete users.
+###Business Process
+The login process is same for everyone. When opening the application the login interface appears. Where the user have to type in their username  to the Username textbox and their password to the password textbox.
+ Then clicking on the the button called Login. When the identification is done the Menu appears based on the user entitlement.
+ 
+
 
 ## Requirements
 ### Functional requirements
