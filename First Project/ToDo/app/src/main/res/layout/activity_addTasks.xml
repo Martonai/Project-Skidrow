@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginTop="30dp"
+        android:minHeight="48dp"
         android:text="Switch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date|datetime"
+        android:inputType="datetime"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/submitBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.329"
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="datetime"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/taskDeadlineEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.207"
@@ -63,6 +66,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/taskCondEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.676"
@@ -109,7 +113,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.671"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskExpEt" />
+        app:layout_constraintTop_toBottomOf="@+id/taskExpEt"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/taskConditionTx"
