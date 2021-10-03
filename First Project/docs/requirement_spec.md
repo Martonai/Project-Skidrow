@@ -38,6 +38,8 @@ This application was built by three main pillar.
 ## Current business process model
 Nowadays the paper-based system is obsolete and not redundant as well. This is not an unified system, you cannot trace your own work, your own problems etc...
 Excel was a step further, but even this isn't the system what this company needs. Our company needs more redundant, and more traceable system.
+Paper-based task management is obsolete in the 21st century. That's a lot
+printing and printing costs. It can also happen that the little paper we glued to our fridge simply escapes our attention. But we are also able to solve this problem.
 
 ## Required business process
 The user can login in the welcome screen. There is two textboxes, one for the email and the second for the password.
@@ -79,6 +81,7 @@ Modification | K6 | Register user | 1.1 | Only the admin can register the users.
 Modification | K7 | Delete user | 1.1 | Only the admin can delete the user.
 Permission | K8 | Permission levels | 1.1 | -Admin: Can create and delete users. Can manage the table by adding tasks to it or modifing them. Also he can delete tasks. -Employer: He can read the table and see everyones task alos he can add new tasks or can modify them. -Employee: They can only view the tasks and modify the task status. -
 Modification | K9 | Dark mode | 1.0 | Changes the app theme. The background color becames dark and the texts become light
+
 
 ## Reports
 This is questionnaire where users can explain their opinion about the application:
