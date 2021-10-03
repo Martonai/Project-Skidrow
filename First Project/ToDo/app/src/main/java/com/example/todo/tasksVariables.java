@@ -9,6 +9,7 @@ public class tasksVariables
     //ADD TASK VARIABLES
 
     private String explantation;
+    private String employee;
     private String condition;
     private String taskgiven;
     private String deadline;
@@ -49,9 +50,14 @@ public class tasksVariables
         this.deadline = deadline;
     }
 
+    public String getEmployee() {
+        return employee;
+    }
 
-
-    //SHOW TASK VARIABLES
+    public void setEmployee(String employee) {
+        this.employee = employee;
+    }
+//SHOW TASK VARIABLES
 
 
 

@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,8 +24,8 @@ public class addTasks extends AppCompatActivity {
 
     View v;
     Switch sw;
-    TextView expl,cond,givenT,deadline;
-    EditText explaintationEt,conditionEt,givenTimeEt,deadlineEt;
+    TextView expl,cond,givenT,deadline,employeeTx;
+    EditText explaintationEt,conditionEt,givenTimeEt,deadlineEt,employeeEt;
     Button submitBtn;
     tasksVariables task;
     boolean isColor = true;
@@ -42,6 +43,8 @@ public class addTasks extends AppCompatActivity {
         conditionEt = findViewById(R.id.taskCondEt);
         givenTimeEt = findViewById(R.id.taskGivenEt);
         deadlineEt = findViewById(R.id.taskDeadlineEt);
+        employeeTx = findViewById(R.id.employeeTxt);
+        employeeEt = findViewById(R.id.employeeEt);
         submitBtn = findViewById(R.id.submitBtn);
         task = new tasksVariables();
 
@@ -84,7 +87,10 @@ public class addTasks extends AppCompatActivity {
         task.setCondition(conditionEt.getText().toString().trim());
         task.setTaskgiven(givenTimeEt.getText().toString().trim());
         task.setDeadline(deadlineEt.getText().toString().trim());
+        task.setEmployee(employeeEt.getText().toString().trim());
         reff.push().setValue(task);
         Toast.makeText(addTasks.this,"Data inserted successfully",Toast.LENGTH_LONG).show();
     }
+
+
 }

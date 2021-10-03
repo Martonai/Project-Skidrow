@@ -1,7 +1,9 @@
 package com.example.todo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -22,12 +24,11 @@ View v;
 
         addTasksBtn = findViewById(R.id.addTasksBtn);
         showTasksBtn = findViewById(R.id.showTasksBtn);
-txt = findViewById(R.id.textView);
+        txt = findViewById(R.id.textView);
         Intent intent = getIntent();
-        Intent intent2 = getIntent();
-        String value = intent.getStringExtra("color");
+
         String authlevel = intent.getStringExtra("key");
-        txt.setText(authlevel);
+
        if(authlevel.equals("1"))
        {
           addTasksBtn.setVisibility(View.INVISIBLE);
@@ -40,15 +41,25 @@ txt = findViewById(R.id.textView);
            {
 
            }
-       if ()
-       {
-           v.setBackgroundResource(R.color.black);
 
-       }
-       else if(value == 0)
-       {
-           v.setBackgroundResource(R.color.black);
-       }
 
+
+
+
+    }
+
+
+
+
+    public void GoToAddTask(View view)
+    {
+        Intent intent = new Intent(authorization.this, addTasks.class);
+        startActivity(intent);
+    }
+
+    public void GoToShowTask(View view)
+    {
+        Intent intent = new Intent(authorization.this, showTasks.class);
+        startActivity(intent);
     }
 }
