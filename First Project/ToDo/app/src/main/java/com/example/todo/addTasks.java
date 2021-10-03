@@ -16,12 +16,8 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.type.Date;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-
-public class gerixy20 extends AppCompatActivity {
+public class addTasks extends AppCompatActivity {
 
 
 
@@ -30,14 +26,14 @@ public class gerixy20 extends AppCompatActivity {
     TextView expl,cond,givenT,deadline;
     EditText explaintationEt,conditionEt,givenTimeEt,deadlineEt;
     Button submitBtn;
-    Tasks task;
+    tasksVariables task;
     boolean isColor = true;
     DatabaseReference reff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gerixy20);
+        setContentView(R.layout.activity_addTasks);
         expl = findViewById(R.id.taskExpTx);
         cond = findViewById(R.id.taskConditionTx);
         givenT = findViewById(R.id.taskGivenTx);
@@ -47,13 +43,13 @@ public class gerixy20 extends AppCompatActivity {
         givenTimeEt = findViewById(R.id.taskGivenEt);
         deadlineEt = findViewById(R.id.taskDeadlineEt);
         submitBtn = findViewById(R.id.submitBtn);
-        task = new Tasks();
+        task = new tasksVariables();
 
         reff = FirebaseDatabase.getInstance().getReference("Tasks");
 
 
 
-        Toast.makeText(gerixy20.this, "You have successfully logged in", Toast.LENGTH_SHORT).show();
+        Toast.makeText(addTasks.this, "You have successfully logged in", Toast.LENGTH_SHORT).show();
 
         v = this.getWindow().getDecorView();
 
@@ -89,6 +85,6 @@ public class gerixy20 extends AppCompatActivity {
         task.setTaskgiven(givenTimeEt.getText().toString().trim());
         task.setDeadline(deadlineEt.getText().toString().trim());
         reff.push().setValue(task);
-        Toast.makeText(gerixy20.this,"Data inserted successfully",Toast.LENGTH_LONG).show();
+        Toast.makeText(addTasks.this,"Data inserted successfully",Toast.LENGTH_LONG).show();
     }
 }

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GlobalVariables.emails[0] = snapshot.child("email").getValue().toString();
                 GlobalVariables.passwords[0] = snapshot.child("password").getValue().toString();
-
+                GlobalVariables.authLevel[0] = snapshot.child("permissionLevel").getValue().toString();
 
             }
 
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GlobalVariables.emails[1] = snapshot.child("email").getValue().toString();
                 GlobalVariables.passwords[1] = snapshot.child("password").getValue().toString();
-
+                GlobalVariables.authLevel[1] = snapshot.child("permissionLevel").getValue().toString();
 
             }
 
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GlobalVariables.emails[2] = snapshot.child("email").getValue().toString();
                 GlobalVariables.passwords[2] = snapshot.child("password").getValue().toString();
-
+                GlobalVariables.authLevel[2] = snapshot.child("permissionLevel").getValue().toString();
 
             }
 
@@ -120,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GlobalVariables.emails[3] = snapshot.child("email").getValue().toString();
                 GlobalVariables.passwords[3] = snapshot.child("password").getValue().toString();
-
+                GlobalVariables.authLevel[3] = snapshot.child("permissionLevel").getValue().toString();
 
             }
 
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GlobalVariables.emails[4] = snapshot.child("email").getValue().toString();
                 GlobalVariables.passwords[4] = snapshot.child("password").getValue().toString();
-
+                GlobalVariables.authLevel[4] = snapshot.child("permissionLevel").getValue().toString();
 
             }
 
@@ -155,23 +156,29 @@ public class MainActivity extends AppCompatActivity {
         } else {
             //Fix the variable name issues due the array
             if (emailET.getText().toString().equals(GlobalVariables.emails[0]) && passET.getText().toString().equals(GlobalVariables.passwords[0])) {
-                Intent intent = new Intent(MainActivity.this, gerixy20.class);
+                Intent intent = new Intent(MainActivity.this, authorization.class);
+                intent.putExtra("key",GlobalVariables.authLevel[0]);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[1]) && passET.getText().toString().equals(GlobalVariables.passwords[1])) {
-                Intent intent = new Intent(MainActivity.this, martoncsaba.class);
+                Intent intent = new Intent(MainActivity.this, authorization.class);
+                intent.putExtra("key",GlobalVariables.authLevel[1]);
                 startActivity(intent);
 
+
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[2]) && passET.getText().toString().equals(GlobalVariables.passwords[2])) {
-                Intent intent = new Intent(MainActivity.this, misinszkimarton.class);
+                Intent intent = new Intent(MainActivity.this, authorization.class);
+                intent.putExtra("key",GlobalVariables.authLevel[2]);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[3]) && passET.getText().toString().equals(GlobalVariables.passwords[3])) {
-                Intent intent = new Intent(MainActivity.this, durkupeti.class);
+                Intent intent = new Intent(MainActivity.this, authorization.class);
+                intent.putExtra("key",GlobalVariables.authLevel[3]);
                 startActivity(intent);
 
             } else if (emailET.getText().toString().equals(GlobalVariables.emails[4]) && passET.getText().toString().equals(GlobalVariables.passwords[4])) {
-                Intent intent = new Intent(MainActivity.this, employee1.class);
+                Intent intent = new Intent(MainActivity.this, authorization.class);
+                intent.putExtra("key",GlobalVariables.authLevel[4]);
                 startActivity(intent);
 
             } else {

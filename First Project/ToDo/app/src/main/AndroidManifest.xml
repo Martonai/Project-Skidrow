@@ -10,19 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDo">
         <activity
-            android:name=".employee1"
+            android:name=".showTasks"
             android:exported="true" />
         <activity
-            android:name=".durkupeti"
+            android:name=".authorization"
             android:exported="true" />
         <activity
-            android:name=".misinszkimarton"
-            android:exported="true" />
-        <activity
-            android:name=".martoncsaba"
-            android:exported="true" />
-        <activity
-            android:name=".gerixy20"
+            android:name=".addTasks"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

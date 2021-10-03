@@ -3,15 +3,17 @@ package com.example.todo;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-public class Tasks
+public class tasksVariables
 {
+
+    //ADD TASK VARIABLES
 
     private String explantation;
     private String condition;
     private String taskgiven;
     private String deadline;
 
-    public Tasks()
+    public tasksVariables()
     {
     }
 
@@ -46,4 +48,18 @@ public class Tasks
     public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
+
+
+
+    //SHOW TASK VARIABLES
+
+
+
+
+
+
+
+
+
+
 }
