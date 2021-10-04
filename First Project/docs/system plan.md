@@ -184,6 +184,11 @@ user.
 |  | Form field | Requirements |  |
 ------------ | ------------- | ------------ | ----------- 
 |  | Username | 1. Required 2. Must not have an already registered username 3. Must be at least 5 characters long and can contain letters and numbers. |  |
+|  | Password | 1. Required 2. Minimum 8 characters long, 8 digits of date of birth upon registration |  |
+|  | Family Name | 1. Required 2. Must not contain a digit, starts with an uppercase letter, can consist of several name members |  |
+|  | Date of birth | 1. Required 2. Fixed date format: yyyy.mm.dd or yyyy-mm-dd |  |
+|  | E-mail address | 1. Required 2. Bound format: account name @ domain name, domain name must be an existing domain name |  |
+|  | Administrator privileges | 1. Opcionális, checkbox |  |
 
 **Login Interface:**
 
