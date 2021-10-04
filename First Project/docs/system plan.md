@@ -65,7 +65,7 @@ The login process is same for everyone. When opening the application the login i
 * Employers
 * Employees
 
-Amind:
+Admin:
 
 * Manage all user
 * Recover or generate new password
