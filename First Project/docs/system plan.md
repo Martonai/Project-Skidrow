@@ -69,8 +69,12 @@ The login process is same for everyone. When opening the application the login i
 		* Security requirements: During software development, a one-step enrollment system will be implemented for users.
 
 ### Laws, rules
-* compliance with gdpr
-
+* Act LIV of 2018 on the protection of trade secrets
+* Act CCXXII of 2015 on general rules for electronic administration and trust services
+* Act LXVI of 1995 on public documents, public archives and the protection of private archives
+* 73/2018 (IV. 20.) Gov. Decree on the Local Public Service Information System
+* 187/2015 (VII.13.) Gov. Regulation is a regulation of the authorities responsible for the security oversight of electronic information systems,and the responsibilities and powers of the Information Security Supervisor, as well as the use of closed electronic information systems fixing.
+* 335/2005 (XII. 29.) Gov. Regulation on general requirements for the management of documents by bodies with a public service mission
 ## Functional plan
 ### System characters
 * Admin
