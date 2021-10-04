@@ -106,6 +106,7 @@ If someone has administrative permission, a register tab will appear next to the
 ## Function-requirements compliance
 ID | Version | Requirement | Function | 
 ------------ | ------------- | ------------ | ----------- 
+01 | 1.0 | user administration | registering, deleting users, and modifying their data, which administrators can do as described in the use cases.
 
 ## Glossary
 
