@@ -20,8 +20,8 @@ Data storage | Data model planning | 0 | 4 | 4 | 0
 Login interface | Creating a logo | 2 | 8 | 0 | 8
 
  ***Milestones***
-*System showcase.
-*Delivery of the completed software.
+* System showcase.
+* Delivery of the completed software.
 
 ## Business plan model
 ![Business Plan Model](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
