@@ -183,6 +183,7 @@ user.
 
 |  | Form field | Requirements |  |
 ------------ | ------------- | ------------ | ----------- 
+|  | Username | 1. Required 2. Must not have an already registered username 3. Must be at least 5 characters long and can contain letters and numbers. |  |
 
 **Login Interface:**
 
