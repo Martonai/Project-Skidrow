@@ -49,12 +49,24 @@ The login process is same for everyone. When opening the application the login i
 *Delete user: The admin can delete a user by clicking on a Delete user button where thje list of the users are listed. Everywhere next to the username there is a "Delete" button. He needs to click on it. Then the application asks the admin if he is sure to delete the user. If he clicks on the Delete user for sure the user is deleted.
 ## Requirements
 ### Functional requirements
-* Store user's datas
-* Work on at last 5.0 or newer android system
-* Add permission levels to users
+* Every employee should be able to login to their account with the generated username and password. To achieve this entitlement they should be registered by the admin. Every user can watch their own tasks and modify their task statuses.
+* The system should store all of the user datas up to 5 years and the system should run on Android version 5.0 or newer.
 
 ### Non-functional requirements
-* Normal users are not be able to access other user's datas, only the admin.
+* The product requirements
+	* Usability requirements: The created product should be easy to learn for new users and should only require minimal IT knowledge.
+	* Reliability follow-ups: The system to be developed accesses a database through a web interface. Competing access to the database is ensured and it cannot be brought into an inconsistent state under normal use.
+	* Efficiency/ Performance: The system should be capable of dealing with a maximum amount of 2000 people based on the company. Furthermore the product size could not reach the 1GB.
+* Organizational requirements
+	* Delivery requirements: The software will be delivered by the date specified in the contract, otherwise the customer will be entitled to the penalty in the contract.
+	* Implementation requirements: The program is installed on the mobile devices specified in the contract, ready for use by users, a minimum amount of data is uploaded to the database in order to facilitate the practical training of the employees.
+	* Standardization requirements: The relevant standardization criteria can be found in the section Legal requirements, standards.
+* External requirements
+	* Cooperation requirements: The relationship between the professionals of the software development company and the customer is carried out by the persons specified in the contract. If necessary, additional experts from both sides will be involved to optimise cooperation.
+	* Ethical requirements: Employees of the software development company must behave in accordance with the approved code of ethics.
+	* Legal requirements:
+		* Confidentiality requirements: In this area, the legal requirements apply. The employees of the development company undertake not to transfer the data of the library employees or users to third parties, and after the successful handover, the non-commercial data will be destroyed.
+		* Security requirements: During software development, a one-step enrollment system will be implemented for users.
 
 ### Laws, rules
 * compliance with gdpr
