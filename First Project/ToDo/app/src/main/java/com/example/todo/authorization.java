@@ -13,22 +13,26 @@ import android.widget.TextView;
 
 public class authorization extends AppCompatActivity {
 
+    //Declare elements
     Button addTasksBtn,showTasksBtn;
-TextView txt;
-View v;
+    TextView txt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authorization);
 
+        //Declare elements variables
         addTasksBtn = findViewById(R.id.addTasksBtn);
         showTasksBtn = findViewById(R.id.showTasksBtn);
-        txt = findViewById(R.id.textView);
+
         Intent intent = getIntent();
 
+        //Get a value from another activity
         String authlevel = intent.getStringExtra("key");
 
+        //Authorize depends on what was the permission_level
        if(authlevel.equals("1"))
        {
           addTasksBtn.setVisibility(View.INVISIBLE);

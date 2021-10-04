@@ -3,6 +3,9 @@ package com.example.todo;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+
+//MAKE A LITTLE OOP
+
 public class tasksVariables
 {
 
@@ -57,7 +60,7 @@ public class tasksVariables
     public void setEmployee(String employee) {
         this.employee = employee;
     }
-//SHOW TASK VARIABLES
+
 
 
 

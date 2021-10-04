@@ -24,12 +24,12 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-
-     TextView failedTx,welcomeTx;
-     EditText emailET,passET;
-     Button button;
-     Switch darkSwitch;
-     View v;
+//Main point
+    TextView failedTx,welcomeTx;
+    EditText emailET,passET;
+    Button button;
+    Switch darkSwitch;
+    View v;
      boolean isColor = true;
      DatabaseReference[] references = new DatabaseReference[5];
     @Override
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+//Call methods
 
         Txmethods();
         ToastConnection();
@@ -47,12 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
-
-
-
-
+//Declare element variables
     public void Txmethods () {
         v = this.getWindow().getDecorView();
         failedTx = findViewById(R.id.failedTx);
@@ -62,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.loginBtn);
         darkSwitch = findViewById(R.id.darkModeSwitch);
     }
+    //Get references from database
     public void References () {
 
         references[0] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-2lVstn18z2E_QakY");
@@ -71,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         references[4] = FirebaseDatabase.getInstance().getReference("Users").child("-Ml-39LqUNzLAnX91e0z");
 
     }
+    //Get values from database
     public void ValueMethod() {
         references[0].addValueEventListener(new ValueEventListener() {
             @Override
@@ -149,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Validate login
     public void MatchingMethod() {
 
         if (emailET.getText().toString().isEmpty() || passET.getText().toString().isEmpty()) {
@@ -194,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Make a toast depends on the connection
 public void ToastConnection()
 {
     Toast.makeText(this, "Waiting to communicate with the Firebase server", Toast.LENGTH_SHORT).show();
@@ -210,6 +209,7 @@ public void ToastConnection()
 
 
 }
+//Make a Login method for validation and getting values from database
     public void Login(View view) {
 
 
@@ -228,7 +228,7 @@ public void ToastConnection()
 
     }
 
-
+//Set the dark mode on the login screen
 public void SetDarkMode()
 {
     darkSwitch.setOnClickListener(new View.OnClickListener() {

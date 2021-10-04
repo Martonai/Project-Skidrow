@@ -1,5 +1,7 @@
 package com.example.todo;
 
+
+//Declare superglobal variables
 public class GlobalVariables
 {
    public static String[] emails = new String[5];

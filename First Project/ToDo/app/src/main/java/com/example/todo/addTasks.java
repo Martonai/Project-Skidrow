@@ -22,19 +22,19 @@ public class addTasks extends AppCompatActivity {
 
 
 
-    View v;
-    Switch sw;
+
+//Create elements
     TextView expl,cond,givenT,deadline,employeeTx;
     EditText explaintationEt,conditionEt,givenTimeEt,deadlineEt,employeeEt;
     Button submitBtn;
     tasksVariables task;
-    boolean isColor = true;
     DatabaseReference reff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtask);
+        //Declare elements variables
         expl = findViewById(R.id.taskExpTx);
         cond = findViewById(R.id.taskConditionTx);
         givenT = findViewById(R.id.taskGivenTx);
@@ -48,38 +48,16 @@ public class addTasks extends AppCompatActivity {
         submitBtn = findViewById(R.id.submitBtn);
         task = new tasksVariables();
 
-        reff = FirebaseDatabase.getInstance().getReference("Tasks");
+        //Get an instance from Tasks table
+        reff = FirebaseDatabase.getInstance().getReference("Tasks").child("Task1");
 
 
 
-        Toast.makeText(addTasks.this, "You have successfully logged in", Toast.LENGTH_SHORT).show();
-
-        v = this.getWindow().getDecorView();
-
-        sw = findViewById(R.id.switch1);
-
-        sw.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ResourceType")
-            @Override
-            public void onClick(View view) {
-                if (isColor) {
-                    v.setBackgroundResource(R.color.black);
-
-                    sw.setTextColor(Color.WHITE);
-                    isColor = false;
-                } else {
-                    v.setBackgroundResource(android.R.color.white);
-
-                    sw.setTextColor(Color.BLACK);
-                    isColor = true;
-                }
-            }
-        });
 
 
     }
 
-
+//Push the elements to the Firabse Database
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void AddTask(View view)
     {
@@ -89,6 +67,7 @@ public class addTasks extends AppCompatActivity {
         task.setDeadline(deadlineEt.getText().toString().trim());
         task.setEmployee(employeeEt.getText().toString().trim());
         reff.push().setValue(task);
+
         Toast.makeText(addTasks.this,"Data inserted successfully",Toast.LENGTH_LONG).show();
     }
 
