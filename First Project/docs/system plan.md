@@ -188,7 +188,7 @@ user.
 |  | Family Name | 1. Required 2. Must not contain a digit, starts with an uppercase letter, can consist of several name members |  |
 |  | Date of birth | 1. Required 2. Fixed date format: yyyy.mm.dd or yyyy-mm-dd |  |
 |  | E-mail address | 1. Required 2. Bound format: account name @ domain name, domain name must be an existing domain name |  |
-|  | Administrator privileges | 1. Opcionális, checkbox |  |
+|  | Administrator privileges | 1. optional, checkbox |  |
 
 **Login Interface:**
 
