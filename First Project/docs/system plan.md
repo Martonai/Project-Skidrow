@@ -33,14 +33,14 @@ The third group is the admin group who can do all of the above mentioned things.
 ### Business Process
 The login process is same for everyone. When opening the application the login interface appears. Where the user have to type in their username  to the Username textbox and their password to the password textbox.
  Then clicking on the the button called Login. When the identification is done the Menu appears based on the user entitlement.
- ***Business process for Employee***
+ ####Business process for Employee
 * Read task: Able to read all task which is assigned to them by clicking on it he can see the description of the task who created the task, when was the task created and when is the deadline of the task. Furthermore can see what is the status of the task.
 * Modify task: Able to modify the task status from "Waiting to be processed" to "Work in progress" to "Waiting for validation".
-***Business process for Employer***
+####Business process for Employer
 *Read task: Able to read all the tasks assigned to everybody by clicking on it he can see the description of the task who created the task, when was the task created and when is the deadline of the task. Furthermore can see what is the status of the task.
 *Create task: Able to create task assigned to a employee by clicking on the Create task button then he needs to fill the textboxes called 'Description', 'Task is assigned to' and select a date for 'Deadline'. The creator of the task is automaticaly the task creator name and the creation date is the moment when the task is created. It is also automated.
 *Modify task: Able to modify the task status from "Waiting to be processed" to "Work in progress" to "Waiting for validation". Also he can modify "Waiting for validation" to "Waiting to be processed" or "Done". Furthermore he can modify Deadline date.
-***Admin***
+####Business process for Admin
 *Read task: Able to read all the tasks assigned to everybody by clicking on it he can see the description of the task who created the task, when was the task created and when is the deadline of the task. Furthermore can see what is the status of the task.
 *Create task: Able to create task assigned to a employee by clicking on the Create task button then he needs to fill the textboxes called 'Description', 'Task is assigned to' and select a date for 'Deadline'. The creator of the task is automaticaly the task creator name and the creation date is the moment when the task is created. It is also automated.
 *Modify task: Able to modify the task status from "Waiting to be processed" to "Work in progress" to "Waiting for validation". Also he can modify "Waiting for validation" to "Waiting to be processed" or "Done". Furthermore he can modify Deadline date.
