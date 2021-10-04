@@ -63,6 +63,10 @@ of it.
 ## Correspondence, how the use cases are covered a requirements
 * 1: The application is created to include the administration of new and old users, which will be accessed by entering the system by entering a username / password. These will provide the main functions of the system.
 * 2: We will create different authorization levels. Users with administrator privileges will have access to all functions and can create / delete user accounts. Upon entering the system, both administrators and users will be able to use the various features provided by the application.
+* 3: The user interface will be designed to provide an image of a general application, each function will be clearly named, and will be easily accessible and easy to use.
+* 4: When building the system, we take care to create a platform-independent, robust operation, so we check the correctness of our code.
+* 5: It is provided by the use of standard and widespread technologies.
+* 6: The managed data will be stored in a database. By using the database, we ensure the extensibility of the data, with which we can easily add new functions to the system afterwards.
 
 ## Screen plans
 If the user start the application, a login screen will shown.
