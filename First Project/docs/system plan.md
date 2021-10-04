@@ -181,7 +181,7 @@ go and then make the login available to the user.
 If you enter incorrect registration information, you should receive an error message a
 user.
 
- | Form field | Requirements |  |
+|  | Form field | Requirements |  |
 ------------ | ------------- | ------------ | ----------- 
 
 **Login Interface:**
