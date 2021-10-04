@@ -61,6 +61,8 @@ of it.
 * EMPLOYEE: Employee has the permission level 1, employees can see what task was given to them, and change the "In progress" condition to "Waiting to be reviewed".the employee can log in or out within the application. The employee cannot create tasks. You can only view and set the status of the tasks issued by the employer.
 ![Use cases](https://github.com/Martonai/Project-Skidrow/blob/main/First%20Project/pictures/business_plan_model.png)
 ## Correspondence, how the use cases are covered a requirements
+* 1: The application is created to include the administration of new and old users, which will be accessed by entering the system by entering a username / password. These will provide the main functions of the system.
+* 2: We will create different authorization levels. Users with administrator privileges will have access to all functions and can create / delete user accounts. Upon entering the system, both administrators and users will be able to use the various features provided by the application.
 
 ## Screen plans
 If the user start the application, a login screen will shown.
