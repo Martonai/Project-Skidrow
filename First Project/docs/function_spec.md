@@ -107,6 +107,11 @@ If someone has administrative permission, a register tab will appear next to the
 ID | Version | Requirement | Function | 
 ------------ | ------------- | ------------ | ----------- 
 01 | 1.0 | user administration | registering, deleting users, and modifying their data, which administrators can do as described in the use cases.
+02 | 1.0 | task administration | registering and deleting tasks that administrators can perform as described in the use cases.
+03 | 1.0 | Manage user accounts | Manage user login and provide the ability to change user information. Registering, deleting, and modifying their data for administrators, which administrators can perform as described in the use cases.
+04 | 1.0 | Easy to use interface | Implement the user interface using standard html, css and javascript technologies, as shown in the screen layouts section.
+05 | 1.0 | Expandability | Use of a database management system, future expansion needs will be taken into account in the design.
+06 | 1.0 | System migration | The system can be implemented in other task managers in a short time if the tasks to be managed are the same.
 
 ## Glossary
 
