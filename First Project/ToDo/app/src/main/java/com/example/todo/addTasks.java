@@ -24,7 +24,7 @@ public class addTasks extends AppCompatActivity {
 
 
 //Create elements
-    TextView expl,cond,givenT,deadline,employeeTx;
+
     EditText explaintationEt,conditionEt,givenTimeEt,deadlineEt,employeeEt;
     Button submitBtn;
     tasksVariables task;
@@ -35,15 +35,12 @@ public class addTasks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtask);
         //Declare elements variables
-        expl = findViewById(R.id.taskExpTx);
-        cond = findViewById(R.id.taskConditionTx);
-        givenT = findViewById(R.id.taskGivenTx);
-        deadline = findViewById(R.id.taskDeadlineTx);
+
         explaintationEt = findViewById(R.id.taskExpEt);
         conditionEt = findViewById(R.id.taskCondEt);
         givenTimeEt = findViewById(R.id.taskGivenEt);
         deadlineEt = findViewById(R.id.taskDeadlineEt);
-        employeeTx = findViewById(R.id.employeeTxt);
+
         employeeEt = findViewById(R.id.employeeEt);
         submitBtn = findViewById(R.id.submitBtn);
         task = new tasksVariables();
